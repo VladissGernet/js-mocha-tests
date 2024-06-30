@@ -1,4 +1,7 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
+import mocha from './mocha.js';
+import { runTest } from './run-test.js';
+import { initFunction } from './function.js';
+
+mocha.setup('bdd');
+runTest(initFunction);
+mocha.run();
